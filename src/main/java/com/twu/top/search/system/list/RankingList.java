@@ -39,4 +39,12 @@ public class RankingList {
                 ", bidding=" + bidding +
                 '}';
     }
+
+    public boolean addTopSearch(TopSearch topSearch) {
+        if (this.topSearchList.contains(topSearch)) {
+            return false;
+        }
+        this.topSearchList.add(topSearch);
+        return true;
+    }
 }

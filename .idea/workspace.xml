@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="79be8362-aaca-4351-aa4f-e129f0e7e496" name="Default Changelist" comment="" />
+    <list default="true" id="79be8362-aaca-4351-aa4f-e129f0e7e496" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/twu/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/twu/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/twu/top/search/system/TopSearchSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/twu/top/search/system/TopSearchSystem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/twu/top/search/system/list/RankingList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/twu/top/search/system/list/RankingList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/twu/top/search/system/list/TopSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/twu/top/search/system/list/TopSearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/twu/top/search/system/user/Manager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/twu/top/search/system/user/Manager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/twu/top/search/system/user/NormalUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/twu/top/search/system/user/NormalUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/twu/top/search/system/user/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/twu/top/search/system/user/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/twu/top/search/system/user/UserImpl.java" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,6 +29,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1gxQpv7qfWOXm5HoIvvjlN4ESjm" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -64,10 +77,50 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser" timestamp="1599126524887">
+    <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser" timestamp="1599216745064">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1599126524887" />
+    <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1599216745064" />
+    <state x="1103" y="274" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1599189048219">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1103" y="274" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1599189048219" />
+    <state x="967" y="170" key="CommitChangelistDialog2" timestamp="1599216983433">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="967" y="170" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1599216983433" />
+    <state width="1877" height="310" key="GridCell.Tab.0.bottom" timestamp="1599216983603">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="310" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1599216983603" />
+    <state width="1877" height="310" key="GridCell.Tab.0.center" timestamp="1599216983603">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="310" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1599216983603" />
+    <state width="1877" height="310" key="GridCell.Tab.0.left" timestamp="1599216983603">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="310" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1599216983603" />
+    <state width="1877" height="310" key="GridCell.Tab.0.right" timestamp="1599216983603">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="310" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1599216983603" />
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1599215828667">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1599215828667" />
+    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1599215828667">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1599215828667" />
+    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1599215828667">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1599215828667" />
+    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1599215828667">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1599215828667" />
     <state x="438" y="61" width="848" height="538" key="dock-window-1" timestamp="1599124508879">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

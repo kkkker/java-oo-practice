@@ -3,24 +3,14 @@ package com.twu.top.search.system.list;
 import java.util.Objects;
 
 public class TopSearch {
-    private int ranking;
     private String describe;
     private int hot;
     private boolean superSearch;
 
-    public TopSearch(int ranking, String describe, int hot, boolean superSearch) {
-        this.ranking = ranking;
+    public TopSearch(String describe, int hot, boolean superSearch) {
         this.describe = describe;
         this.hot = hot;
         this.superSearch = superSearch;
-    }
-
-    public int getRanking() {
-        return ranking;
-    }
-
-    public void setRanking(int ranking) {
-        this.ranking = ranking;
     }
 
     public String getDescribe() {
@@ -50,8 +40,7 @@ public class TopSearch {
     @Override
     public String toString() {
         return "TopSearch{" +
-                "ranking=" + ranking +
-                ", describe='" + describe + '\'' +
+                "describe='" + describe + '\'' +
                 ", hot=" + hot +
                 ", superSearch=" + superSearch +
                 '}';
