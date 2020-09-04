@@ -44,11 +44,12 @@ public class User {
         return res.toString();
     }
 
-    public boolean addTopSearch(TopSearch topSearch, List<TopSearch> topSearchList) {
-        if (topSearchList.contains(topSearch)) {
+    public boolean addTopSearch(TopSearch topSearch, RankingList rankingList) {
+        if (rankingList.getTopSearchList().contains(topSearch)) {
             return false;
         }
-        topSearchList.add(topSearch);
+        rankingList.getTopSearchList().add(topSearch);
+        rankingList.getBidding().add(0);
         return true;
     }
 }

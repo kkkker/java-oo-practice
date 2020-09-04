@@ -58,6 +58,7 @@ public class Main {
         String order;
         while (topSearchSystem.isLogIn()) {
             if (user.getJurisdiction().equals("normal-user")) {
+                NormalUser normalUser = (NormalUser)user;
                 System.out.println("1.查看热搜排行榜");
                 System.out.println("2.给热搜事件投票");
                 System.out.println("3.购买热搜");
@@ -69,6 +70,15 @@ public class Main {
                         System.out.println(topSearchSystem.showRankingList());
                         break;
                     case "2":
+                        System.out.println("请输入你要投票的热搜名称");
+                        searchName = sc.next();
+                        System.out.println("请输入你要投票的热搜票数: (你目前还有" + normalUser.getNumberOfVotes() + "票)");
+                        int numberOfVotes = sc.nextInt();
+                        if (topSearchSystem.vote(searchName, numberOfVotes)) {
+                            System.out.println("投票成功");
+                        } else {
+                            System.out.println("投票失败");
+                        }
                         break;
                     case "3":
                         break;

@@ -1,5 +1,6 @@
 package com.twu.top.search.system.user;
 
+import com.twu.top.search.system.list.RankingList;
 import com.twu.top.search.system.list.TopSearch;
 
 import java.util.List;
@@ -21,14 +22,15 @@ public class Manager extends User {
         this.password = password;
     }
 
-    public boolean addSuperTopSearch(TopSearch topSearch, List<TopSearch> topSearchList) {
-        int index = topSearchList.indexOf(topSearch);
+    public boolean addSuperTopSearch(TopSearch topSearch, RankingList rankingList) {
+        int index = rankingList.getTopSearchList().indexOf(topSearch);
         if (index < 0) {
-            topSearchList.add(topSearch);
+            rankingList.getTopSearchList().add(topSearch);
+            rankingList.getBidding().add(0);
             return true;
         }
-        boolean res = !topSearchList.get(index).isSuperSearch();
-        topSearchList.get(index).setSuperSearch(true);
+        boolean res = !rankingList.getTopSearchList().get(index).isSuperSearch();
+        rankingList.getTopSearchList().get(index).setSuperSearch(true);
         return res;
     }
 }

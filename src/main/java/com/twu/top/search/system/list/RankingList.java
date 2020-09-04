@@ -1,7 +1,11 @@
 package com.twu.top.search.system.list;
 
 import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
 
 public class RankingList {
 
@@ -46,5 +50,23 @@ public class RankingList {
         }
         this.topSearchList.add(topSearch);
         return true;
+    }
+
+    public void rearrangement() {
+        Map<Integer, TopSearch> temp = new HashMap<>();
+        for (int i = 0; i < this.bidding.size(); i++) {
+            if(bidding.get(i) > 0) {
+                temp.put(i, this.topSearchList.get(i));
+            }
+        }
+
+        this.topSearchList = this.topSearchList.stream()
+                .filter(e -> bidding.get(this.topSearchList.indexOf(e)) == 0)
+                .sorted(Comparator.comparing(TopSearch::getHot).reversed())
+                .collect(Collectors.toList());
+
+        for (Map.Entry<Integer, TopSearch> entry : temp.entrySet()) {
+            topSearchList.add(entry.getKey(), entry.getValue());
+        }
     }
 }

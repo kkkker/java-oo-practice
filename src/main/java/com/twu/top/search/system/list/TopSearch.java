@@ -29,6 +29,10 @@ public class TopSearch {
         this.hot = hot;
     }
 
+    public void addHot(int hot) {
+        this.hot += hot;
+    }
+
     public boolean isSuperSearch() {
         return superSearch;
     }
