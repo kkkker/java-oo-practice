@@ -74,15 +74,27 @@ public class TopSearchSystem {
         }
         for (TopSearch topSearch : topSearchList) {
             if (topSearch.getDescribe().equals(searchName)) {
-                if (topSearch.isSuperSearch()) {
-                    normalUser.vote(topSearch, votes);
-                } else {
-                    normalUser.vote(topSearch, votes);
-                }
+                normalUser.vote(topSearch, votes);
                 break;
             }
         }
         this.rankingList.rearrangement();
         return true;
+    }
+
+    public boolean buyTopSearch(String searchName, int ranking, int money) {
+        List<TopSearch> topSearchList = this.rankingList.getTopSearchList();
+        if (topSearchList.stream().noneMatch(e -> e.getDescribe().equals(searchName))) {
+            return false;
+        }
+        NormalUser normalUser = (NormalUser)user;
+        boolean res = false;
+        for (TopSearch topSearch : topSearchList) {
+            if (topSearch.getDescribe().equals(searchName)) {
+                res = normalUser.buyTopSearch(this.rankingList, topSearch, ranking, money);
+                break;
+            }
+        }
+        return res;
     }
 }

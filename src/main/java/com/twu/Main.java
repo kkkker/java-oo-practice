@@ -81,6 +81,17 @@ public class Main {
                         }
                         break;
                     case "3":
+                        System.out.println("请输入你要购买的热搜名称");
+                        searchName = sc.next();
+                        System.out.println("请输入你要购买的热搜排名");
+                        int ranking = sc.nextInt();
+                        System.out.println("请输入你要购买的热搜金额");
+                        int money = sc.nextInt();
+                        if (topSearchSystem.buyTopSearch(searchName, ranking, money)) {
+                            System.out.println("购买成功");
+                        } else {
+                            System.out.println("购买失败");
+                        }
                         break;
                     case "4":
                         System.out.println("请输入你要添加的热搜事件的名字");
